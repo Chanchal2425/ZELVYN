@@ -30,7 +30,7 @@ const ZELVYN_CONFIG = {
   social: {
     // linkedin: "https://linkedin.com/company/zelvyn-placeholder",
     // twitter: "https://twitter.com/zelvyn_placeholder",
-    github: "https://github.com/zelvyn",
+    github: "https://github.com/Chanchal2425/ZELVYN",
     instagram: "https://www.instagram.com/zelvyn_ai/"
   },
 
