@@ -1,8 +1,10 @@
-# ⚡ ZELVYN AI
+# <img width="1536" height="1024" alt="ChatGPT Image Aug 31, 2026, 06_21_32 PM" src="https://github.com/user-attachments/assets/1724e0c2-4421-411b-a9cd-6d4297908976" />
+
+ ZELVYN 
 
 > **Intelligent AI solutions, automation, and digital experiences for modern businesses.**
 
-ZELVYN AI is a modern AI solutions platform designed to showcase AI services, intelligent automation, digital products, and AI-powered solutions for businesses.
+ZELVYN is a modern AI solutions platform designed to showcase AI services, intelligent automation, digital products, and AI-powered solutions for businesses.
 
 The project combines a responsive frontend website with a **Node.js + Express backend** that handles project inquiries through a custom contact form and delivers submissions directly to Gmail using SMTP.
 
@@ -47,11 +49,9 @@ The project combines a responsive frontend website with a **Node.js + Express ba
 ### Backend
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Nodemailer](https://img.shields.io/badge/Nodemailer-22B573?style=for-the-badge)
 
 - Node.js
-- Express.js
 - Nodemailer
 - dotenv
 - REST API
