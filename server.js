@@ -336,16 +336,20 @@ app.get("/", (req, res) => {
 // Start server
 // --------------------------------------------------
 
-app.listen(PORT, () => {
-  console.log("");
-  console.log("========================================");
-  console.log("       ZELVYN AI SERVER RUNNING");
-  console.log("========================================");
-  console.log("");
-  console.log(`Website: http://localhost:${PORT}/index.html`);
-  console.log(`Contact API: http://localhost:${PORT}/contact.html`);
-  console.log("");
-});
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log("");
+    console.log("========================================");
+    console.log("       ZELVYN AI SERVER RUNNING");
+    console.log("========================================");
+    console.log("");
+    console.log(`Website: http://localhost:${PORT}/index.html`);
+    console.log(`Contact API: http://localhost:${PORT}/api/contact`);
+    console.log("");
+  });
+}
+
+module.exports = app;
   
 // --------------------------------------------------
 // HTML escaping
