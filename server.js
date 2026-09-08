@@ -331,7 +331,7 @@ This message was submitted through the ZELVYN AI website contact form.
 // --------------------------------------------------
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 // --------------------------------------------------
