@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // --------------------------------------------------
-// Helper Functions (Declared First)
+// Helper Functions
 // --------------------------------------------------
 
 function isValidEmail(email) {
@@ -70,6 +70,7 @@ app.post("/api/contact", async (req, res) => {
     const {
       fullName,
       email,
+      instagramId,
       companyName,
       service,
       budget,
@@ -115,10 +116,11 @@ app.post("/api/contact", async (req, res) => {
 
     const cleanName = fullName.trim();
     const cleanEmail = email.trim();
-    const cleanCompany = companyName ? companyName.trim() : "Not provided";
+    const cleanInstagram = instagramId && instagramId.trim() ? instagramId.trim() : "Not provided";
+    const cleanCompany = companyName && companyName.trim() ? companyName.trim() : "Not provided";
     const cleanService = service.trim();
     const cleanBudget = budget.trim();
-    const cleanTimeline = timeline ? timeline.trim() : "Not provided";
+    const cleanTimeline = timeline && timeline.trim() ? timeline.trim() : "Not provided";
     const cleanDescription = projectDescription.trim();
     const cleanSubmittedAt = submittedAt ? submittedAt : new Date().toISOString();
 
@@ -130,6 +132,7 @@ NEW ZELVYN AI PROJECT INQUIRY
 
 Name: ${cleanName}
 Email: ${cleanEmail}
+Instagram: ${cleanInstagram}
 Company: ${cleanCompany}
 Service: ${cleanService}
 Budget: ${cleanBudget}
@@ -165,6 +168,10 @@ This message was submitted through the ZELVYN AI website contact form.
         <tr>
           <td style="padding:12px 0;font-weight:bold;">Email</td>
           <td style="padding:12px 0;"><a href="mailto:${escapeHtml(cleanEmail)}">${escapeHtml(cleanEmail)}</a></td>
+        </tr>
+        <tr>
+          <td style="padding:12px 0;font-weight:bold;">Instagram Handle</td>
+          <td style="padding:12px 0;">${escapeHtml(cleanInstagram)}</td>
         </tr>
         <tr>
           <td style="padding:12px 0;font-weight:bold;">Company</td>
