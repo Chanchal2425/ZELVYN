@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
         email:
           document.getElementById("email")?.value.trim() || "",
 
+        instagramId:
+          document.getElementById("instagram-id")?.value.trim() || "",
+
         whatsappPhone:
           document.getElementById("whatsapp-phone")?.value.trim() || "",
 
@@ -51,9 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document.getElementById("timeline-select")?.value.trim() || "",
 
         projectDescription:
-          document
-            .getElementById("project-description")
-            ?.value.trim() || "",
+          document.getElementById("project-description")?.value.trim() || "",
 
         submittedAt: new Date().toISOString(),
       };
@@ -106,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       alert(
         error.message ||
-          "Something went wrong while sending your message."
+        "Something went wrong while sending your message."
       );
 
       if (submitButton) {
@@ -177,43 +178,34 @@ function validateForm(form) {
   }
 
 
-// Instagram ID
+  // Instagram ID
 
-const instagram = document.getElementById("instagram-id");
+  // Instagram ID (Optional)
+  const instagram = document.getElementById("instagram-id");
 
-if (instagram) {
-  const instagramValue = instagram.value.trim();
-  const instagramUsername = instagramValue.replace(/^@/, "");
-  const instagramRegex = /^[a-zA-Z0-9._]+$/;
+  if (instagram) {
+    const instagramValue = instagram.value.trim();
+    const instagramUsername = instagramValue.replace(/^@/, "");
+    const instagramRegex = /^[a-zA-Z0-9._]+$/;
 
-  if (!instagramValue) {
-    showFieldError(
-      instagram,
-      "Please enter your Instagram ID."
-    );
-
-    isValid = false;
-
-  } else if (instagramUsername.length > 30) {
-    showFieldError(
-      instagram,
-      "Instagram ID must be 30 characters or less."
-    );
-
-    isValid = false;
-
-  } else if (!instagramRegex.test(instagramUsername)) {
-    showFieldError(
-      instagram,
-      "Please enter a valid Instagram ID."
-    );
-
-    isValid = false;
-
-  } else {
-    clearFieldError(instagram);
+    if (
+      instagramValue &&
+      (
+        instagramUsername.length > 30 ||
+        !instagramRegex.test(instagramUsername)
+      )
+    ) {
+      showFieldError(
+        instagram,
+        instagramUsername.length > 30
+          ? "Instagram ID must be 30 characters or less."
+          : "Please enter a valid Instagram ID."
+      );
+      isValid = false;
+    } else {
+      clearFieldError(instagram);
+    }
   }
-}
 
 
   // Service
