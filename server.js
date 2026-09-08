@@ -16,7 +16,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve your website files
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname), {
+  index: "index.html"
+}));
 
 // --------------------------------------------------
 // Gmail transporter
