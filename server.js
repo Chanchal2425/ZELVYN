@@ -237,7 +237,10 @@ This message was submitted through the ZELVYN AI website contact form.
 // --------------------------------------------------
 
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "404.html"));
+  res.status(404).json({
+    success: false,
+    message: `Route not found: ${req.method} ${req.originalUrl}`,
+  });
 });
 
 // --------------------------------------------------
