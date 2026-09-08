@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Case Study: LearnMate AI - Real-Time Collaborative Learning Workspace | ZELVYN AI</title>
+
+  <meta
+    name="description"
+    content="LearnMate AI is a full-stack collaborative learning workspace combining AI assistance, Google Sign-In, real-time collaboration, shared notes, live chat, shared resources, Pomodoro sessions, and resource-aware AI assistance."
+  >
+
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-to-content">
+    Skip to main content
+  </a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+
+      <a href="../index.html" class="brand-logo">
+        <img
+          class="brand-image"
+          src="../images/charlogo.avif"
+          alt="ZELVYN — Intelligent Systems for Modern Business"
+        >
+
+        <span class="brand-name" data-config="brand.name">
+          ZELVYN AI
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+
+        <div class="nav-links">
+          <a href="../services.html" class="nav-link">Services</a>
+          <a href="../projects.html" class="nav-link active">Work</a>
+          <a href="../process.html" class="nav-link">Process</a>
+          <a href="../pricing.html" class="nav-link">Pricing</a>
+          <a href="../about.html" class="nav-link">About</a>
+          <a href="../contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="../contact.html" class="btn btn-primary btn-sm">
+            <span>Start a Conversation</span>
+          </a>
+        </div>
+
+      </nav>
+
+      <button
+        class="mobile-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop"></div>
+
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+
+    <div class="mobile-nav-links">
+      <a href="../index.html" class="mobile-nav-link">Home</a>
+      <a href="../services.html" class="mobile-nav-link">Services</a>
+      <a href="../projects.html" class="mobile-nav-link active">Work</a>
+      <a href="../process.html" class="mobile-nav-link">Process</a>
+      <a href="../pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="../about.html" class="mobile-nav-link">About</a>
+      <a href="../contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <div style="margin-top: 2rem;">
+      <a href="../contact.html" class="btn btn-primary btn-full">
+        Start a Conversation
+      </a>
+    </div>
+
+  </aside>
+
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Project Introduction -->
+    <article class="section" style="padding-bottom: 2rem;">
+
+      <div class="container container-narrow">
+
+        <div
+          style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.25rem;"
+          class="reveal"
+        >
+
+          <a
+            href="../projects.html"
+            class="service-link"
+            style="font-size: 0.85rem;"
+          >
+            ← Back to All Projects
+          </a>
+
+          <span class="badge badge-cyan">
+            AI & Collaboration
+          </span>
+
+          <span class="badge badge-concept">
+            Full-Stack Project
+          </span>
+
+        </div>
+
+
+        <h1 class="reveal reveal-delay-1">
+          LearnMate AI - Real-Time Collaborative Learning Workspace
+        </h1>
+
+
+        <p
+          class="lead reveal reveal-delay-2"
+          style="margin-top: 1rem;"
+        >
+          A full-stack collaborative learning workspace that combines
+          an AI learning assistant with real-time shared rooms, live
+          notes, live chat, shared resources, task management,
+          collaborative study sessions, and a shared Pomodoro timer.
+        </p>
+
+
+        <div
+          class="project-meta-grid reveal reveal-delay-3"
+          style="grid-template-columns: repeat(4, 1fr); margin-top: 2.5rem; padding: 1.25rem;"
+        >
+
+          <div>
+            <div class="meta-label">
+              Category
+            </div>
+
+            <div class="meta-value">
+              AI & Collaborative Learning
+            </div>
+          </div>
+
+
+          <div>
+            <div class="meta-label">
+              Application
+            </div>
+
+            <div class="meta-value">
+              Real-Time Learning Workspace
+            </div>
+          </div>
+
+
+          <div>
+            <div class="meta-label">
+              Architecture
+            </div>
+
+            <div class="meta-value">
+              React + Django Full-Stack
+            </div>
+          </div>
+
+
+          <div>
+            <div class="meta-label">
+              Primary Tech
+            </div>
+
+            <div class="meta-value">
+              React, Django, Channels, Redis, Grok
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- Architecture Mockup -->
+    <section
+      class="section"
+      style="padding: 1rem 0 3rem;"
+    >
+
+      <div class="container container-narrow">
+
+        <div
+          class="system-dashboard-mockup reveal"
+          style="padding: 2rem;"
+        >
+
+          <div class="mockup-header">
+
+            <span
+              style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan);"
+            >
+              LEARNMATE AI WORKSPACE
+            </span>
+
+            <span
+              style="font-size: 0.75rem; color: var(--text-dim);"
+            >
+              REAL-TIME COLLABORATION
+            </span>
+
+          </div>
+
+
+          <div
+            style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;"
+          >
+
+            <div
+              style="background: var(--bg-surface-elevated); padding: 0.85rem 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;"
+            >
+
+              <span>
+                React Learning Workspace
+              </span>
+
+              <span class="badge badge-primary">
+                Frontend
+              </span>
+
+            </div>
+
+
+            <div
+              style="text-align: center; color: var(--accent-cyan);"
+            >
+              ↓
+            </div>
+
+
+            <div
+              style="background: var(--bg-surface-elevated); padding: 0.85rem 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;"
+            >
+
+              <span>
+                Django REST APIs
+              </span>
+
+              <span class="badge badge-cyan">
+                HTTP / REST
+              </span>
+
+            </div>
+
+
+            <div
+              style="text-align: center; color: var(--accent-cyan);"
+            >
+              ↓
+            </div>
+
+
+            <div
+              style="background: var(--bg-surface-elevated); padding: 0.85rem 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;"
+            >
+
+              <span>
+                Django Channels WebSocket Communication
+              </span>
+
+              <span class="badge badge-emerald">
+                Real-Time
+              </span>
+
+            </div>
+
+
+            <div
+              style="text-align: center; color: var(--accent-cyan);"
+            >
+              ↓
+            </div>
+
+
+            <div
+              style="background: var(--bg-surface-elevated); padding: 0.85rem 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;"
+            >
+
+              <span>
+                Redis Channel Layer
+              </span>
+
+              <span class="badge badge-cyan">
+                Message Distribution
+              </span>
+
+            </div>
+
+
+            <div
+              style="text-align: center; color: var(--accent-cyan);"
+            >
+              ↓
+            </div>
+
+
+            <div
+              style="background: var(--bg-surface-elevated); padding: 0.85rem 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;"
+            >
+
+              <span>
+                Persistent Application Data
+              </span>
+
+              <span class="badge badge-cyan">
+                Backend Storage
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Breakdown Content -->
+    <section
+      class="section"
+      style="padding-top: 0;"
+    >
+
+      <div class="container container-narrow">
+
+
+        <!-- Challenge -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            The Challenge
+          </h2>
+
+          <p>
+            Learning and group study often require multiple separate
+            tools for notes, communication, resources, task tracking,
+            study sessions, and asking questions. LearnMate AI was
+            built as a single collaborative workspace where learners
+            can work together inside shared rooms while also using
+            an AI assistant.
+          </p>
+
+        </div>
+
+
+        <!-- Architectural Approach -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            Our Architectural Approach
+          </h2>
+
+          <p>
+            LearnMate AI uses React for the frontend and Django for
+            the backend. Django REST Framework handles standard API
+            communication, while Django Channels manages WebSocket
+            connections for real-time collaboration.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            Redis is used as the channel layer for Django Channels,
+            allowing WebSocket events to be distributed through
+            shared room groups.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            JWT authentication is used for authenticated application
+            communication, while Google Sign-In provides an
+            additional authentication method for users.
+          </p>
+
+        </div>
+
+
+        <!-- Real-Time Collaboration -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            Real-Time Collaboration
+          </h2>
+
+          <p>
+            Real-time communication is one of the core parts of
+            LearnMate AI. Instead of requiring users to repeatedly
+            refresh or request new data, supported collaborative
+            features use persistent WebSocket connections.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            Django Channels manages these connections using
+            asynchronous WebSocket consumers. Users connected to
+            the same room can receive relevant updates through
+            room-based channel groups.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            Redis provides the channel layer used to distribute
+            these events between the WebSocket consumers.
+          </p>
+
+        </div>
+
+
+        <!-- Key Features -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            Key Features Engineered
+          </h2>
+
+
+          <ul
+            class="feature-list"
+            style="margin-top: 1.25rem;"
+          >
+
+
+            <!-- AI Assistant -->
+            <li class="feature-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+
+              <span>
+                <strong>AI Learning Assistant:</strong>
+                LearnMate AI includes an AI chatbot powered through
+                the Grok API, allowing users to ask questions and
+                receive AI-assisted learning responses.
+              </span>
+
+            </li>
+
+
+            <!-- Resource-Aware AI -->
+            <li class="feature-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 012-2V5a2 2 0 012-2h11"/>
+              </svg>
+
+              <span>
+                <strong>AI Assistance for Shared Resources:</strong>
+                Users can interact with the AI assistant about
+                uploaded learning resources, making the shared
+                resource library part of the learning workflow.
+              </span>
+
+            </li>
+
+
+            <!-- Live Chat -->
+            <li class="feature-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+
+              <span>
+                <strong>Live Collaborative Chat:</strong>
+                Room members can communicate through live chat
+                using WebSocket-based communication.
+              </span>
+
+            </li>
+
+
+            <!-- Shared Notes -->
+            <li class="feature-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+
+              <span>
+                <strong>Live Shared Notes:</strong>
+                Multiple users can work on shared room notes while
+                updates are communicated through WebSockets.
+                Update throttling and a fallback debounce mechanism
+                help control continuous typing updates.
+              </span>
+
+            </li>
+
+
+            <!-- Shared Resources -->
+            <li class="feature-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 012-2V5a2 2 0 012-2h11"/>
+              </svg>
+
+              <span>
+                <strong>Live Shared Resource Library:</strong>
+                Users can upload files and add external links,
+                categorize resources, react to resources, comment,
+                pin items, and remove resources according to the
+                available permissions.
+              </span>
+
+            </li>
+
+
+            <!-- Tasks -->
+            <li class="feature-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+
+              <span>
+                <strong>Shared Task Management:</strong>
+                Learners can manage tasks within the collaborative
+                learning workspace.
+              </span>
+
+            </li>
+
+
+            <!-- Pomodoro -->
+            <li class="feature-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+
+              <span>
+                <strong>Shared Pomodoro Timer:</strong>
+                The workspace includes a shared study timer whose
+                state is synchronized through WebSocket communication.
+                The session administrator controls the timer while
+                other participants can observe the current state.
+              </span>
+
+            </li>
+
+
+            <!-- Whiteboard -->
+            <li class="feature-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+
+              <span>
+                <strong>Collaborative Whiteboard:</strong>
+                Provides a shared visual workspace for learners
+                working together inside a room.
+              </span>
+
+            </li>
+
+
+            <!-- Presence -->
+            <li class="feature-item">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+
+              <span>
+                <strong>Live Presence & Typing Indicators:</strong>
+                The workspace provides visibility into active users,
+                including profile information and typing/activity
+                indicators.
+              </span>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- Authentication -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            Authentication & User Access
+          </h2>
+
+          <p>
+            LearnMate AI supports JWT-based authentication for
+            authenticated application communication and also
+            provides Google Sign-In as an authentication method.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            The frontend maintains authentication information
+            locally, while authenticated API requests use Bearer
+            access tokens through the Axios client.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            WebSocket connections also carry authentication
+            information during connection establishment, allowing
+            the backend to validate the user before accepting
+            real-time communication.
+          </p>
+
+        </div>
+
+
+        <!-- AI Integration -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            AI Integration
+          </h2>
+
+          <p>
+            The AI functionality is integrated into the learning
+            workspace through the Grok API. The frontend communicates
+            with the backend through the application's API layer,
+            while the backend handles the AI-related request flow.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            A key part of the learning experience is connecting
+            AI assistance with shared learning resources, allowing
+            users to ask questions about resources they have
+            uploaded rather than treating the chatbot as a completely
+            separate feature.
+          </p>
+
+        </div>
+
+
+        <!-- Frontend State Management -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            Frontend State Management
+          </h2>
+
+          <p>
+            The React application uses Hooks such as
+            <code>useState</code>, <code>useEffect</code>,
+            <code>useRef</code>, and <code>useCallback</code>
+            across the workspace components.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            State is used for UI values, loaded application data,
+            timers, WebSocket references, comments, resources,
+            and other interactive workspace functionality.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            React Context is also used for shared application
+            functionality such as theme management.
+          </p>
+
+        </div>
+
+
+        <!-- Continuous Updates -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            Handling Continuous Updates
+          </h2>
+
+          <p>
+            Collaborative editing can produce many updates while
+            a user is typing. LearnMate AI uses throttling to
+            limit outgoing updates during continuous typing and
+            a fallback debounce mechanism to capture the final
+            state after typing stops.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            The shared notes implementation also preserves the
+            user's caret position when remote content is applied,
+            helping prevent unexpected cursor movement during
+            collaboration.
+          </p>
+
+        </div>
+
+
+        <!-- Technology Stack -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            Technology Stack
+          </h2>
+
+          <div
+            class="tag-cloud"
+            style="margin-top: 1rem;"
+          >
+
+            <span class="badge badge-emerald">
+              React
+            </span>
+
+            <span class="badge badge-cyan">
+              Django
+            </span>
+
+            <span class="badge">
+              Django REST Framework
+            </span>
+
+            <span class="badge">
+              Django Channels
+            </span>
+
+            <span class="badge">
+              WebSockets
+            </span>
+
+            <span class="badge">
+              Redis
+            </span>
+
+            <span class="badge">
+              Grok API
+            </span>
+
+            <span class="badge">
+              Axios
+            </span>
+
+            <span class="badge">
+              JWT Authentication
+            </span>
+
+            <span class="badge">
+              Google Sign-In
+            </span>
+
+            <span class="badge">
+              Tailwind CSS
+            </span>
+
+            <span class="badge">
+              React Context
+            </span>
+
+            <span class="badge">
+              Browser Local Storage
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- Engineering Outcome -->
+        <div
+          class="reveal"
+          style="margin-bottom: 3rem;"
+        >
+
+          <h2>
+            Engineered Outcome
+          </h2>
+
+          <p>
+            LearnMate AI brings AI assistance and collaborative
+            learning workflows into one workspace. Users can
+            communicate through live chat, work together on shared
+            notes and visual collaboration features, exchange
+            learning resources, use a shared study timer, manage
+            tasks, and interact with an AI assistant within the
+            same learning environment.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            The combination of React, Django REST APIs, Django
+            Channels, WebSockets, Redis, JWT authentication,
+            Google Sign-In, and the Grok API provides the technical
+            foundation for the application's collaborative and
+            AI-assisted learning experience.
+          </p>
+
+        </div>
+
+
+        <!-- Final CTA -->
+        <div
+          class="final-cta-box reveal"
+          style="padding: 2.5rem; text-align: center; margin-top: 4rem;"
+        >
+
+          <h3>
+            Building a collaborative product with AI and real-time features?
+          </h3>
+
+          <p
+            style="margin: 1rem auto 1.5rem; font-size: 1rem;"
+          >
+            Let's design the architecture, APIs, AI integration,
+            and real-time communication layer around your product.
+          </p>
+
+          <a
+            href="../contact.html?service=web-development"
+            class="btn btn-primary btn-lg"
+          >
+
+            <span>
+              Discuss Your Project
+            </span>
+
+            <svg
+              class="arrow-right"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer
+    class="site-footer"
+    role="contentinfo"
+  >
+
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a
+            href="../index.html"
+            class="brand-logo"
+          >
+
+            <img
+              class="brand-image"
+              src="../images/charlogo.avif"
+              alt="ZELVYN — Intelligent Systems for Modern Business"
+            >
+
+            <span
+              class="brand-name"
+              data-config="brand.name"
+            >
+              ZELVYN AI
+            </span>
+
+          </a>
+
+          <p data-config="brand.description">
+            Bespoke AI automation and digital systems engineering.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4 class="footer-heading">
+            Services
+          </h4>
+
+          <ul class="footer-nav">
+
+            <li>
+              <a
+                href="../services/whatsapp-automation.html"
+                class="footer-link"
+              >
+                WhatsApp Automation
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../services/ai-agents.html"
+                class="footer-link"
+              >
+                AI Agents
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../services/web-development.html"
+                class="footer-link"
+              >
+                Web Development
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../services/ai-advertising.html"
+                class="footer-link"
+              >
+                AI Advertising
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../services/business-automation.html"
+                class="footer-link"
+              >
+                Business Automation
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h4 class="footer-heading">
+            Company
+          </h4>
+
+          <ul class="footer-nav">
+
+            <li>
+              <a
+                href="../about.html"
+                class="footer-link"
+              >
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../projects.html"
+                class="footer-link"
+              >
+                Selected Work
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../process.html"
+                class="footer-link"
+              >
+                Process
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../pricing.html"
+                class="footer-link"
+              >
+                Pricing
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../contact.html"
+                class="footer-link"
+              >
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h4 class="footer-heading">
+            Contact
+          </h4>
+
+          <ul class="footer-nav">
+
+            <li style="color: var(--text-secondary);">
+              <span data-config="contact.email">
+                hello@ZELVYNai.com
+              </span>
+            </li>
+
+            <li style="color: var(--text-secondary);">
+              <span data-config="contact.whatsappDisplay">
+                Available on Request
+              </span>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          &copy; 2026
+          <span data-config="brand.legalName">
+            ZELVYN AI Solutions
+          </span>.
+          All rights reserved.
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+</html>
