@@ -38,8 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
         instagramId:
           document.getElementById("instagram-id")?.value.trim() || "",
 
-        whatsappPhone:
-          document.getElementById("whatsapp-phone")?.value.trim() || "",
 
         companyName:
           document.getElementById("company-name")?.value.trim() || "",

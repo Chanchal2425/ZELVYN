@@ -39,7 +39,6 @@ const transporter = nodemailer.createTransport({
 function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
-
 // --------------------------------------------------
 // Contact form API
 // --------------------------------------------------
@@ -49,7 +48,6 @@ app.post("/api/contact", async (req, res) => {
     const {
       fullName,
       email,
-      whatsappPhone,
       companyName,
       service,
       budget,
@@ -103,9 +101,6 @@ app.post("/api/contact", async (req, res) => {
 
     const cleanName = fullName.trim();
     const cleanEmail = email.trim();
-    const cleanPhone = whatsappPhone
-      ? whatsappPhone.trim()
-      : "Not provided";
 
     const cleanCompany = companyName
       ? companyName.trim()
@@ -143,9 +138,6 @@ ${cleanName}
 
 Email:
 ${cleanEmail}
-
-WhatsApp / Phone:
-${cleanPhone}
 
 Company:
 ${cleanCompany}
@@ -219,14 +211,6 @@ This message was submitted through the ZELVYN AI website contact form.
           </td>
         </tr>
 
-        <tr>
-          <td style="padding:12px 0;font-weight:bold;">
-            WhatsApp / Phone
-          </td>
-          <td style="padding:12px 0;">
-            ${escapeHtml(cleanPhone)}
-          </td>
-        </tr>
 
         <tr>
           <td style="padding:12px 0;font-weight:bold;">
