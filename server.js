@@ -33,9 +33,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static assets from root directory
-app.use(express.static(__dirname));
+// Serve root folder static files
+app.use(express.static(path.join(__dirname)));
 
-// --------------------------------------------------
+// Serve static assets inside subfolders
+app.use("/assets", express.static(path.join(__dirname, "assets")));
+app.use("/images", express.static(path.join(__dirname, "images")));
+app.use("/public", express.static(path.join(__dirname, "public")));
+app.use("/projects", express.static(path.join(__dirname, "projects")));
+app.use("/services", express.static(path.join(__dirname, "services"))); 
 // Page Routes
 // --------------------------------------------------
 
