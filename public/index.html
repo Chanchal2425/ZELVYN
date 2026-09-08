@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZELVYN — Intelligent Systems for Modern Business</title>
+  <meta name="description" content="ZELVYN builds custom AI agents, WhatsApp automations, websites, and business systems. Zero-friction Engineering, Logic, Vision, Your-growth & Networks.">
+  <meta name="keywords" content="ZELVYN, AI automation, WhatsApp automation, AI agents, freelance AI developer, AI automation agency">
+
+  <!-- Immediate Theme Bootstrapper to prevent flash of wrong theme (FOUT) -->
+  <script>
+    (function(){
+      var saved = localStorage.getItem('zelvyn-theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ZELVYN — Intelligent Systems for Modern Business">
+  <meta property="og:description" content="Zero-friction Engineering, Logic, Vision, Your-growth & Networks. Custom AI agents, WhatsApp automation, and bespoke digital systems.">
+  <meta property="og:site_name" content="ZELVYN">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- =========================================================================
+       ZELVYN Brand Reveal Intro Animation (Session-Gated)
+       ========================================================================= -->
+  <div id="zelvyn-brand-intro" class="zelvyn-intro-overlay" role="dialog" aria-modal="true" aria-label="Brand Introduction">
+    <div class="intro-wordmark-wrap">
+      <div class="intro-logo-title">ZELVYN</div>
+      
+      <div class="intro-meaning-stream" aria-label="Zero-friction Engineering, Logic, Vision, Your-growth & Networks">
+        <div class="intro-letter-line"><span class="intro-char-highlight">Z</span> — Zero-friction</div>
+        <div class="intro-letter-line"><span class="intro-char-highlight">E</span> — Engineering</div>
+        <div class="intro-letter-line"><span class="intro-char-highlight">L</span> — Logic</div>
+        <div class="intro-letter-line"><span class="intro-char-highlight">V</span> — Vision</div>
+        <div class="intro-letter-line"><span class="intro-char-highlight">Y</span> — Your-growth</div>
+        <div class="intro-letter-line"><span class="intro-char-highlight">N</span> — Networks</div>
+      </div>
+    </div>
+    <div class="intro-skip-hint">Click anywhere to skip ✕</div>
+  </div>
+
+  <!-- =========================================================================
+       Navigation Header
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="ZELVYN Home">
+                <img class="brand-image" src="images/charlogo.avif" alt="ZELVYN — Intelligent Systems for Modern Business" width="84" height="126">
+        <span class="brand-name" data-config="brand.name">ZELVYN</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <div class="nav-links">
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="projects.html" class="nav-link">Work</a>
+          <a href="process.html" class="nav-link">Process</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <!-- Theme Switch Toggle Button -->
+          <button class="theme-toggle-btn" aria-label="Toggle Light and Dark Theme" title="Toggle theme">
+            <!-- Sun Icon (shown in dark mode) -->
+            <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (shown in light mode) -->
+            <svg class="theme-icon-light" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">
+            <span>Start a Conversation</span>
+            <svg class="arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="projects.html" class="mobile-nav-link">Work</a>
+      <a href="process.html" class="mobile-nav-link">Process</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+        <span style="font-size: 0.9rem; font-weight: 600;">Theme Mode</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-full">
+        <span>Start a Conversation for free</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       Main Content
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- Upgraded Hero Section with 3D Connected Systems Visual -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Copy -->
+          <div class="hero-content reveal">
+            <div class="eyebrow eyebrow-indigo">
+              <span class="eyebrow-dot"></span>
+              <span>Zero-friction Engineering & Systems</span>
+            </div>
+
+            <h1>Intelligent systems for <span class="text-gradient">modern business.</span></h1>
+
+            <p class="lead">
+              We build AI agents, WhatsApp automations, websites and digital systems that help businesses save time, capture leads and operate more efficiently.
+            </p>
+
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary btn-lg">
+                <span>Start a Conversation for free</span>
+                <svg class="arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="projects.html" class="btn btn-secondary btn-lg">
+                <span>View Our Work</span>
+              </a>
+            </div>
+
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span>Zero-friction Architecture</span>
+              </div>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <span>100% Custom Code & Workflows</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3D Connected Systems Visualization -->
+          <div class="hero-3d-system-wrapper reveal reveal-delay-2">
+            
+            <div class="hero-3d-cluster">
+              <div class="mockup-header">
+                <div class="mockup-dots">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                </div>
+                <div class="mockup-title">
+                  <span class="status-pulse"></span>
+                  <span>ZELVYN ENGINE • ACTIVE 3D MESH</span>
+                </div>
+              </div>
+
+              <!-- Central 3D Core with Orbiting System Nodes -->
+              <div class="cluster-scene-canvas">
+                
+                <!-- Central Core -->
+                <div class="cluster-core-zelvyn">
+                  <div class="core-logo-mark">Z</div>
+                  <div class="core-subtext">CORE MESH</div>
+                </div>
+
+                <!-- Orbit Nodes with 3D Depth -->
+                <div class="orbit-node-3d node-ai floating-3d-node">
+                  <span class="node-icon-dot indigo"></span>
+                  <span>AI Agents</span>
+                </div>
+
+                <div class="orbit-node-3d node-whatsapp floating-3d-node-delayed">
+                  <span class="node-icon-dot emerald"></span>
+                  <span>WhatsApp API</span>
+                </div>
+
+                <!-- <div class="orbit-node-3d node-crm floating-3d-node">
+                  <span class="node-icon-dot cyan"></span>
+                  <span>Custom CRM</span>
+                </div> -->
+
+                <div class="orbit-node-3d node-web floating-3d-node-delayed">
+                  <span class="node-icon-dot amber"></span>
+                  <span>Web Platforms</span>
+                </div>
+
+                <div class="orbit-node-3d node-auto floating-3d-node">
+                  <span class="node-icon-dot cyan"></span>
+                  <span>Automations</span>
+                </div>
+
+                <div class="orbit-node-3d node-growth floating-3d-node-delayed">
+                  <span class="node-icon-dot emerald"></span>
+                  <span>Analytics</span>
+                </div>
+              </div>
+
+              <!-- Stream Execution Logs -->
+              <div class="mockup-stream">
+                <div class="stream-header">
+                  <span>LIVE EXECUTION STREAM</span>
+                  <span class="text-cyan">0.18s avg latency</span>
+                </div>
+                <div class="stream-log">
+                  <div class="log-item">
+                    <span class="log-time">16:30:02</span>
+                    <span class="log-tag success">TRIGGER</span>
+                    <span>Inbound customer event via WhatsApp Cloud API</span>
+                  </div>
+                  <div class="log-item">
+                    <span class="log-time">16:30:03</span>
+                    <span class="log-tag ai">AI AGENT</span>
+                    <span>Intent parsed: "CRM Consultation & Pricing"</span>
+                  </div>
+                  <div class="log-item">
+                    <span class="log-time">16:30:04</span>
+                    <span class="log-tag crm">CRM SYNC</span>
+                    <span>Created Deal #ZL-902 in Stage: Qualified</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Micro Metric Cards -->
+            <div class="floating-stat-card top-right">
+              <span class="status-pulse"></span>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-dim); font-family: var(--font-mono);">RESPONSE SPEED</div>
+                <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary);">Sub-5 Seconds</div>
+              </div>
+            </div>
+
+            <div class="floating-stat-card bottom-left">
+              <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-cyan);"></div>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-dim); font-family: var(--font-mono);">SYSTEM STATUS</div>
+                <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary);">100% Operational</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Interactive Brand Meaning Section: What ZELVYN Means
+         ========================================================================= -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="zelvyn-acronym-container reveal">
+      <div class="section-header text-center" style="margin-bottom: 1rem;">
+        <div class="eyebrow eyebrow-cyan">Our Philosophy</div>
+        <h2>What <span class="text-gradient">ZELVYN</span> Means</h2>
+        <p class="lead" style="max-width: 680px; margin: 0.5rem auto 0;">
+          Every letter represents a core pillar of our engineering standard and client commitment.
+        </p>
+      </div>
+
+      <div class="zelvyn-letter-grid">
+
+        <div class="zelvyn-letter-item is-active" data-tilt>
+          <div class="letter-char">
+            <img src="images/charlogo.avif" alt="Z"width="105" 
+  height="105" 
+  loading="lazy"
+  decoding="async">
+          </div>
+          <div class="letter-word">Zero-friction</div>
+          <div class="letter-desc">Seamless operational workflows that eliminate manual friction.</div>
+        </div>
+
+        <div class="zelvyn-letter-item" data-tilt>
+          <div class="letter-char">
+            <img src="images/chare.avif" alt="E" width="105" 
+  height="105" 
+  loading="lazy"
+  decoding="async">
+          </div>
+          <div class="letter-word">Engineering</div>
+          <div class="letter-desc">Bespoke, maintainable code built with zero unnecessary bloat.</div>
+        </div>
+
+        <div class="zelvyn-letter-item" data-tilt>
+          <div class="letter-char">
+            <img src="images/charl.avif" alt="L" loading="lazy" width="105" 
+  height="105" 
+  loading="lazy"
+  decoding="async">
+          </div>
+          <div class="letter-word">Logic</div>
+          <div class="letter-desc">Deterministic rules, resilient webhooks, and transparent data models.</div>
+        </div>
+
+        <div class="zelvyn-letter-item" data-tilt>
+          <div class="letter-char">
+            <img src="images/charv.avif" alt="V" width="105" 
+  height="105" 
+  loading="lazy"
+  decoding="async">
+          </div>
+          <div class="letter-word">Vision</div>
+          <div class="letter-desc">Future-proof architecture tailored to long-term business scale.</div>
+        </div>
+
+        <div class="zelvyn-letter-item" data-tilt>
+          <div class="letter-char">
+            <img src="images/chary.avif" alt="Y"  width="105" 
+  height="105" 
+  loading="lazy"
+  decoding="async">
+          </div>
+          <div class="letter-word">Your-growth</div>
+          <div class="letter-desc">Automations designed to increase revenue, conversions, and speed.</div>
+        </div>
+
+        <div class="zelvyn-letter-item" data-tilt>
+          <div class="letter-char">
+            <img src="images/charn.avif" alt="N" width="105" 
+  height="105" 
+  loading="lazy"
+  decoding="async">
+          </div>
+          <div class="letter-word">Networks</div>
+          <div class="letter-desc">Integrated software, APIs, and connected customer channels.</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- =========================================================================
+         Trust Statement Strip
+         ========================================================================= -->
+    <section class="trust-strip">
+      <div class="container">
+        <div class="trust-statement-grid reveal">
+          <div class="trust-headline">
+            Built for businesses that want to automate, improve and grow.
+          </div>
+          <div class="trust-badges">
+            <div class="trust-pill">
+              <span class="eyebrow-dot" style="color: var(--accent-cyan);"></span>
+              <span>Pragmatic Engineering</span>
+            </div>
+            <div class="trust-pill">
+              <span class="eyebrow-dot" style="color: var(--accent-emerald);"></span>
+              <span>Clear Milestone Deliverables</span>
+            </div>
+            <div class="trust-pill">
+              <span class="eyebrow-dot" style="color: var(--accent-primary-light);"></span>
+              <span>Transparent Pricing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Services Preview Section
+         ========================================================================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="eyebrow eyebrow-cyan">Core Capabilities</div>
+          <h2>Bespoke engineering across 6 essential verticals</h2>
+          <p class="lead">From automated customer interactions we build robust systems tailored to your specific workflow.</p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          
+          <!-- Service 1: WhatsApp Automation -->
+          <div class="card service-card reveal" style="padding: 2.25rem;">
+            <div class="card-icon card-icon-emerald">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+            </div>
+            <h2>WhatsApp Business Automation</h2>
+            <p class="service-card-desc">
+              Convert prospects instantly and support customers 24/7 on the channel they use every day. We build intelligent conversational workflows using the Meta WhatsApp Cloud API.
+            </p>
+            <div class="feature-list">
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Automated customer replies & FAQ resolution</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Inbound lead qualification & calendar booking</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Order status, payment link, & invoice alerts</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="services/whatsapp-automation.html" class="btn btn-secondary btn-full">
+                <span>View WhatsApp Automation Specs</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 2: AI Agents -->
+          <div class="card service-card reveal reveal-delay-1" style="padding: 2.25rem;">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93L12 18l-3.25-2.07A4.001 4.001 0 018 6a4 4 0 014-4z"/>
+                <path d="M6 18h12M9 22h6"/>
+              </svg>
+            </div>
+            <h2>AI Agents & Assistants</h2>
+            <p class="service-card-desc">
+              Custom AI assistants grounded in your business data. Connected to internal tool APIs to execute actions, retrieve records, and assist customers or employees.
+            </p>
+            <div class="feature-list">
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>24/7 Tier-1 Customer Support Agents with RAG</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Autonomous Sales & Lead Qualifier Assistants</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Internal Business Copilots & Data Extraction Bots</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="services/ai-agents.html" class="btn btn-secondary btn-full">
+                <span>View AI Agents Specs</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 3: Custom CRM Development -->
+          <!-- <div class="card service-card reveal reveal-delay-2" data-tilt>
+            <div>
+              <div class="card-icon card-icon-cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M3 9h18M9 21V9"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title">Custom CRM Development</h3>
+              <p class="service-card-desc">
+                Tailored CRM systems built around your specific sales pipeline, team roles, and metrics without monthly per-seat SaaS bloat.
+              </p>
+              <div class="service-card-bullets">
+                <div class="service-card-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Custom pipeline & stage management</span>
+                </div>
+                <div class="service-card-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Real-time executive dashboards & analytics</span>
+                </div>
+                <div class="service-card-bullet">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                  <span>Task management & team activity logs</span>
+                </div>
+              </div>
+            </div>
+            <a href="services/custom-crm.html" class="service-link">
+              <span>Explore Custom CRM</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div> -->
+
+          <!-- Service 4: Custom Websites & Web Apps -->
+          <div class="card service-card reveal reveal-delay-1" style="padding: 2.25rem;">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h2>Custom Websites & Web Apps</h2>
+            <p class="service-card-desc">
+              Fast, responsive, clean web platforms built without heavy plugins or unnecessary bloat. Designed for conversion, SEO dominance, and effortless maintenance.
+            </p>
+            <div class="feature-list">
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Modern corporate websites & landing pages</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Interactive client portals & SaaS dashboards</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Sub-second page speeds & 100% mobile perfection</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="services/web-development.html" class="btn btn-secondary btn-full">
+                <span>View Web Development Specs</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 5: AI Advertising & Creative -->
+           <div class="card service-card reveal" style="padding: 2.25rem;">
+            <div class="card-icon card-icon-amber">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h2>AI Advertising & Creative</h2>
+            <p class="service-card-desc">
+              Generate dozens of high-converting social media ad variations, product mockups, and hook concepts in hours using structured AI generation pipelines.
+            </p>
+            <div class="feature-list">
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Social media ad visual matrices (Meta, Google, LinkedIn)</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>High-converting ad copy & headline variations</span>
+              </div>
+              <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Automated creative testing workflows</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="services/ai-advertising.html" class="btn btn-secondary btn-full">
+                <span>View AI Advertising Specs</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 6: Business Automation -->
+                    <div class="card service-card reveal reveal-delay-1" style="padding: 2.25rem;">
+  <div class="card-icon">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1"/>
+    </svg>
+  </div>
+
+  <h2>Instagram Automation</h2>
+
+  <p class="service-card-desc">
+    Turn Instagram conversations into automated customer journeys that engage, qualify, and convert leads 24/7. Built to save time, improve response speed, and generate more opportunities from every interaction.
+  </p>
+
+  <div class="feature-list">
+    <div class="feature-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 13l4 4L19 7"/>
+      </svg>
+      <span>Automated DM replies triggered by keywords, comments & interactions</span>
+    </div>
+
+    <div class="feature-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 13l4 4L19 7"/>
+      </svg>
+      <span>Lead capture, qualification & personalized customer journeys</span>
+    </div>
+
+    <div class="feature-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 13l4 4L19 7"/>
+      </svg>
+      <span>Automated follow-ups, FAQs, offers & appointment flows</span>
+    </div>
+  </div>
+
+  <div style="margin-top: 1.5rem;">
+    <a href="services/instagram-automation.html" class="btn btn-secondary btn-full">
+      <span>View Instagram Automation Specs</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Why ZELVYN Section
+         ========================================================================= -->
+    <section class="section" style="background: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="eyebrow eyebrow-indigo">Why Choose ZELVYN</div>
+          <h2>Practical technology. Zero buzzword hype.</h2>
+          <p class="lead">We prioritize stable, maintainable systems that solve concrete operational bottlenecks over shiny gimmicks.</p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          
+          <div class="card reveal" data-tilt>
+            <div class="card-icon">01</div>
+            <h3>Built Around Your Business</h3>
+            <p class="text-secondary">We don't force your team into rigid generic templates. Every workflow, and agent prompt is molded to your actual operations.</p>
+          </div>
+
+          <div class="card reveal reveal-delay-1" data-tilt>
+            <div class="card-icon card-icon-cyan">02</div>
+            <h3>Automation Before Complexity</h3>
+            <p class="text-secondary">We implement the simplest, most resilient solution first. You don't need a convoluted 10-layer AI model when a clean automated workflow solves the problem.</p>
+          </div>
+
+          <div class="card reveal reveal-delay-2" data-tilt>
+            <div class="card-icon card-icon-emerald">03</div>
+            <h3>Practical AI, Not Hype</h3>
+            <p class="text-secondary">We deploy AI where it delivers real ROI—in customer triage, document extraction, and lead scoring—not as a flashy marketing gimmick.</p>
+          </div>
+
+          <div class="card reveal" data-tilt>
+            <div class="card-icon card-icon-amber">04</div>
+            <h3>Designed for Long-Term Use</h3>
+            <p class="text-secondary">Clean architecture, well-documented code, and zero vendor lock-in. You own your code, your data, and your system integrations completely.</p>
+          </div>
+
+<div class="card reveal" data-tilt>
+  <div class="card-icon">05</div>
+  <h3>Digital-First Communication</h3>
+  <p class="text-secondary">
+    We keep communication direct, documented, and asynchronous.
+    No unnecessary calls or communication layers—just email and Instagram
+    conversations with the people building your system.
+  </p>
+</div>
+
+          <div class="card reveal reveal-delay-2" data-tilt>
+            <div class="card-icon card-icon-cyan">06</div>
+            <h3>Transparent Milestones</h3>
+            <p class="text-secondary">Clear stages, scoped deliverables, and transparent pricing. You always know what is being built, why, and when it will be delivered.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+     Digital-First Communication Section
+     ========================================================================= -->
+<section class="section" style="background: var(--bg-surface-elevated);">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <div class="eyebrow eyebrow-cyan">How We Communicate</div>
+      <h2>Built for a <span class="text-gradient">digital-first</span> generation.</h2>
+      <p class="lead">
+        No unnecessary calls. No waiting on hold. No communication friction.
+        ZELVYN operates asynchronously through the channels modern businesses
+        already use every day.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-3">
+
+      <div class="card reveal" data-tilt>
+        <div class="card-icon card-icon-cyan">01</div>
+        <h3>Email First</h3>
+        <p class="text-secondary">
+          Structured communication for project briefs, requirements,
+          proposals, deliverables, documentation, and business inquiries.
+        </p>
+      </div>
+
+      <div class="card reveal reveal-delay-1" data-tilt>
+        <div class="card-icon card-icon-emerald">02</div>
+        <h3>Instagram Direct</h3>
+        <p class="text-secondary">
+          Fast, informal conversations for questions, ideas, updates,
+          collaborations, and discovering what we can build together.
+        </p>
+      </div>
+
+      <div class="card reveal reveal-delay-2" data-tilt>
+        <div class="card-icon card-icon-amber">03</div>
+        <h3>Zero-Call Workflow</h3>
+        <p class="text-secondary">
+          Our communication model is intentionally asynchronous—giving both
+          sides more time to think, respond clearly, and keep everything documented.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="pricing-note-banner reveal" style="margin-top: 2.5rem;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16v12H4z"/>
+        <path d="M8 20h8M12 16v4"/>
+      </svg>
+      <div style="font-size: 0.92rem; color: var(--text-secondary);">
+        <strong>Digital by design:</strong>
+        We believe good communication doesn't require a phone call.
+        Send us an email or reach out through Instagram—we'll take it from there.
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- =========================================================================
+         Featured Work / Selected Projects
+         ========================================================================= -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="eyebrow eyebrow-cyan">Selected Portfolio</div>
+          <h2>Concept & Production Case Studies</h2>
+          <p class="lead">A breakdown of challenges, technical architectures, and engineered solutions across our key specialties.</p>
+        </div>
+
+        <div class="grid grid-cols-2">
+          
+          <!-- Project 1: WhatsApp Lead Automation -->
+                    <div class="project-card reveal" data-category="automation">
+            <div class="project-preview-mockup">
+              <div class="project-mockup-inner">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--accent-emerald); font-family: var(--font-mono);">
+                  <span>WHATSAPP INBOUND ENGINE</span>
+                  <span>QUALIFIED DEAL ROUTED</span>
+                </div>
+                <div style="background: var(--bg-surface); padding: 0.65rem; border-radius: 6px; font-size: 0.8rem; border: 1px solid var(--border-subtle);">
+                  <span style="color: var(--text-dim);">User:</span> "Hi, looking for a 3-bedroom villa in North Bangalore."
+                </div>
+                <div style="background: rgba(16, 185, 129, 0.1); padding: 0.65rem; border-radius: 6px; font-size: 0.8rem; border: 1px solid rgba(16, 185, 129, 0.2); color: var(--accent-emerald);">
+                  <span style="font-weight: 700;">Bot:</span> "Found 4 matching properties. Budget ₹1.5 Cr–₹2.5 Cr? Let's book a site visit."
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">
+                <span class="badge badge-emerald">Automation</span>
+                <span class="badge badge-concept">Concept Project</span>
+              </div>
+              <h3 class="project-title">Real Estate Lead Qualification & Booking Engine</h3>
+              <p class="project-summary">
+                Automated inbound ad lead triage system that captures lead intent, validates budget parameters, delivers digital brochures, and books site visits.
+              </p>
+              <div class="project-meta-grid">
+                <div>
+                  <div class="meta-label">Challenge</div>
+                  <div class="meta-value">High lead loss from delayed responses</div>
+                </div>
+                <div>
+                  <div class="meta-label">Engineered Outcome</div>
+                  <div class="meta-value">Instant 24/7 qualification & auto-booking</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="tag-cloud">
+                  <span class="badge">WhatsApp Cloud API</span>
+                  <span class="badge">AIsensy</span>
+                  <span class="badge">Google Calendar</span>
+                </div>
+                <a href="projects/whatsapp-lead-automation.html" class="service-link">
+                  <span>View Full Case Study</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Sales CRM Dashboard -->
+          <!-- <div class="project-card reveal reveal-delay-1" data-tilt>
+            <div class="project-preview-mockup">
+              <div class="project-mockup-inner">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--accent-cyan); font-family: var(--font-mono);">
+                  <span>CUSTOM CRM • PIPELINE VIEW</span>
+                  <span>4 ACTIVE STAGES</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; height: 100%;">
+                  <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 4px; padding: 0.4rem; font-size: 0.72rem;">
+                    <div style="color: var(--text-dim);">New Leads (12)</div>
+                    <div style="font-weight: 700; margin-top: 4px;">₹4.2L Potential</div>
+                  </div>
+                  <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 4px; padding: 0.4rem; font-size: 0.72rem;">
+                    <div style="color: var(--text-dim);">In Negotiation (5)</div>
+                    <div style="font-weight: 700; margin-top: 4px;">₹8.5L Potential</div>
+                  </div>
+                  <div style="background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: 4px; padding: 0.4rem; font-size: 0.72rem;">
+                    <div style="color: var(--accent-cyan);">Won Deals (8)</div>
+                    <div style="font-weight: 700; margin-top: 4px;">₹14.0L Closed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">
+                <span class="badge badge-cyan">Custom CRM</span>
+                <span class="badge badge-concept">Concept Project</span>
+              </div>
+              <h3 class="project-title">Bespoke B2B Sales Pipeline & Analytics Portal</h3>
+              <p class="project-summary">
+                A lightweight, tailored sales pipeline CRM built for a consulting agency to track deals, calculate rep commissions, and trigger automated follow-up reminders.
+              </p>
+              <div class="project-meta-grid">
+                <div>
+                  <div class="meta-label">Problem</div>
+                  <div class="meta-value">Messy spreadsheets & missed renewals</div>
+                </div>
+                <div>
+                  <div class="meta-label">Solution</div>
+                  <div class="meta-value">Unified custom dashboard & alerts</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="tag-cloud">
+                  <span class="badge">FastAPI / Node</span>
+                  <span class="badge">PostgreSQL</span>
+                  <span class="badge">Chart.js</span>
+                </div>
+                <a href="projects/sales-crm-dashboard.html" class="service-link">
+                  <span>View Study</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Project 3: AI Customer Support Agent -->
+          <div class="project-card reveal" data-category="ai-agents">
+            <div class="project-preview-mockup">
+              <div class="project-mockup-inner">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--accent-primary-light); font-family: var(--font-mono);">
+                  <span>RAG SUPPORT AGENT</span>
+                  <span>CONFIDENCE: 99.2%</span>
+                </div>
+                <div style="background: var(--bg-surface); padding: 0.65rem; border-radius: 6px; font-size: 0.8rem; border: 1px solid var(--border-subtle);">
+                  <span style="color: var(--text-dim);">Customer:</span> "How do I invite secondary admins to our team workspace?"
+                </div>
+                <div style="background: rgba(99, 102, 241, 0.1); padding: 0.65rem; border-radius: 6px; font-size: 0.8rem; border: 1px solid rgba(99, 102, 241, 0.2); color: var(--accent-primary-light);">
+                  <span style="font-weight: 700;">AI Agent:</span> "Navigate to Settings > Team Members, click 'Add Member', and select Role: Admin."
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">
+                <span class="badge badge-primary">AI Agents</span>
+                <span class="badge badge-concept">Concept Project</span>
+              </div>
+              <h3 class="project-title">24/7 AI Knowledgebase Support Assistant</h3>
+              <p class="project-summary">
+                Autonomous support agent grounded in 200+ technical documentation pages, resolving standard customer inquiries with strict factual adherence and human escalation.
+              </p>
+              <div class="project-meta-grid">
+                <div>
+                  <div class="meta-label">Challenge</div>
+                  <div class="meta-value">High ticket volume & slow night-time triage</div>
+                </div>
+                <div>
+                  <div class="meta-label">Engineered Outcome</div>
+                  <div class="meta-value">Instant resolution of 80%+ Tier-1 tickets</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="tag-cloud">
+                  <span class="badge">OpenAI / Claude API</span>
+                  <span class="badge">Database</span>
+                  <span class="badge">Trained on real documents</span>
+                </div>
+                <a href="projects/ai-support-agent.html" class="service-link">
+                  <span>View Full Case Study</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: High-Performance Headless E-Commerce -->
+          <div class="project-card reveal reveal-delay-1" data-category="websites">
+            <div class="project-preview-mockup">
+              <div class="project-mockup-inner">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--accent-cyan); font-family: var(--font-mono);">
+                  <span>HEADLESS STOREFRONT</span>
+                  <span>SUB-500MS LOAD</span>
+                </div>
+                <div style="display: flex; gap: 0.5rem; height: 100%; align-items: center;">
+                  <div style="flex: 1; background: var(--bg-surface); padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border-subtle); text-align: center;">
+                    <div style="font-size: 1.2rem; font-weight: 800; color: #fff;">0.5s</div>
+                    <div style="font-size: 0.65rem; color: var(--text-dim);">FCP Speed</div>
+                  </div>
+                  <div style="flex: 1; background: var(--bg-surface); padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border-subtle); text-align: center;">
+                    <div style="font-size: 1.2rem; font-weight: 800; color: var(--accent-emerald);">99/100</div>
+                    <div style="font-size: 0.65rem; color: var(--text-dim);">Lighthouse Score</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">
+                <span class="badge">Websites & Apps</span>
+                <span class="badge badge-concept">Concept Project</span>
+              </div>
+              <h3 class="project-title">Ultra-Fast Headless Storefront & Catalog</h3>
+              <p class="project-summary">
+                A custom-engineered e-commerce storefront designed for seamless mobile navigation, instantaneous catalog filtering, and 1-click WhatsApp order confirmation.
+              </p>
+              <div class="project-meta-grid">
+                <div>
+                  <div class="meta-label">Challenge</div>
+                  <div class="meta-value">Sluggish 5s load times on mobile devices</div>
+                </div>
+                <div>
+                  <div class="meta-label">Engineered Outcome</div>
+                  <div class="meta-value">Near-instant loads & frictionless checkout</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="tag-cloud">
+                  <span class="badge">HTML5 / CSS3</span>
+                  <span class="badge">Vanilla JS</span>
+                  <span class="badge">Razorpay / Stripe</span>
+                </div>
+                <a href="projects/ecommerce-web-platform.html" class="service-link">
+                  <span>View Full Case Study</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;" class="reveal">
+          <a href="projects.html" class="btn btn-secondary btn-lg">
+            <span>Explore All 6 Case Studies</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Process Section (4 Steps)
+         ========================================================================= -->
+    <section class="section" id="process" style="background: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="eyebrow eyebrow-indigo">Our Process</div>
+          <h2>From problem definition to production launch</h2>
+          <p class="lead">A streamlined, transparent 4-step delivery lifecycle designed to keep you in control at every stage.</p>
+        </div>
+
+        <div class="process-grid-4">
+          
+          <div class="process-step-card reveal" data-tilt>
+            <div class="step-num">01</div>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-desc">We audit your current workflow, identify manual bottlenecks, understand tech stack constraints, and define concrete success criteria.</p>
+          </div>
+
+          <div class="process-step-card reveal reveal-delay-1" data-tilt>
+            <div class="step-num">02</div>
+            <h3 class="step-title">Plan</h3>
+            <p class="step-desc">We create the system blueprint, API integration architecture, UI mockups, and a phased timeline before writing a single line of production code.</p>
+          </div>
+
+          <div class="process-step-card reveal reveal-delay-2" data-tilt>
+            <div class="step-num">03</div>
+            <h3 class="step-title">Build</h3>
+            <p class="step-desc">We develop the software, configure automation triggers, train AI agents, and build responsive dashboards with regular milestone updates.</p>
+          </div>
+
+          <div class="process-step-card reveal reveal-delay-3" data-tilt>
+            <div class="step-num">04</div>
+            <h3 class="step-title">Launch & Improve</h3>
+            <p class="step-desc">We conduct thorough end-to-end testing, deploy to production, train your team, and provide ongoing maintenance and performance fine-tuning.</p>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;" class="reveal">
+          <a href="process.html" class="service-link">
+            <span>Read full 7-step engineering roadmap & deliverables</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Pricing Preview Section
+         ========================================================================= -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="eyebrow eyebrow-cyan">Transparent Pricing</div>
+          <h2>Predictable packages with flexible scoping</h2>
+          <p class="lead">Starting prices based on project complexity. Final quotes are tailored to your required integrations, volume, and customization.</p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          
+          <!-- Starter Tier -->
+          <div class="pricing-card reveal" data-tilt>
+            <div class="card-header">
+              <h3>Starter</h3>
+              <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.35rem;">For individuals and small businesses taking their first step into automation.</p>
+            </div>
+            <div class="price-box">
+              <span class="price-prefix">Starting From</span>
+              <div class="price-amount" data-price-inr="15,000+" data-price-usd="200+">₹15,000+</div>
+              <span class="price-unit">one-time project base</span>
+            </div>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Single workflow or WhatsApp bot</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Up to 2 third-party app integrations</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Lead qualification logic</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>14 days post-launch support</span>
+              </li>
+            </ul>
+            <div class="card-footer">
+              <a href="contact.html?service=whatsapp&tier=starter" class="btn btn-outline btn-full">Get Started</a>
+            </div>
+          </div>
+
+          <!-- Growth Tier (Featured) -->
+          <div class="pricing-card featured reveal reveal-delay-1" data-tilt>
+            <div class="pricing-tier-tag">Most Popular</div>
+            <div class="card-header">
+              <h3>Growth</h3>
+              <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.35rem;">For scaling businesses ready to automate multi-step operations or build custom apps.</p>
+            </div>
+            <div class="price-box">
+              <span class="price-prefix">Starting From</span>
+              <div class="price-amount" data-price-inr="35,000+" data-price-usd="475+">₹35,000+</div>
+              <span class="price-unit">one-time project base</span>
+            </div>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Custom apps or advanced AI agent</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Multi-stage pipeline & analytics dashboard</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Database & knowledgebase integration</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>21 days post-launch support & handoff</span>
+              </li>
+            </ul>
+            <div class="card-footer">
+              <a href="contact.html?tier=growth" class="btn btn-primary btn-full">Select Growth</a>
+            </div>
+          </div>
+
+          <!-- Custom Tier -->
+          <div class="pricing-card reveal reveal-delay-2" data-tilt>
+            <div class="card-header">
+              <h3>Custom</h3>
+              <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.35rem;">For established companies needing full-scale software systems and bespoke infrastructure.</p>
+            </div>
+            <div class="price-box">
+              <span class="price-prefix">Scope Based</span>
+              <div class="price-amount">Let's Talk</div>
+              <span class="price-unit">custom quote & SLA</span>
+            </div>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>End-to-end custom web applications</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Multi-agent autonomous systems</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Enterprise ERP integrations</span>
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                <span>Ongoing retainer & dedicated maintenance</span>
+              </li>
+            </ul>
+            <div class="card-footer">
+              <a href="contact.html?tier=custom" class="btn btn-outline btn-full">Start a Conversation</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pricing-note-banner reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+          <div style="font-size: 0.92rem; color: var(--text-secondary);">
+            <strong>Pricing Scope Note:</strong> Every business is unique. These starting figures reflect baseline entry points for typical scopes. Final pricing is based on technical complexity, integrations, volume, and ongoing maintenance. <a href="pricing.html" style="color: var(--accent-cyan); text-decoration: underline;">View complete pricing breakdowns & comparison</a>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Testimonials (Transparent Placeholders)
+         ========================================================================= -->
+    <!-- <section class="section" style="background: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <div class="eyebrow eyebrow-emerald">Client Feedback</div>
+          <h2>Reviews & Partnership Stories</h2>
+          <p class="lead">We maintain strict integrity—we never fabricate client testimonials. Real verified client reviews will appear here as ongoing projects conclude.</p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          
+          <div class="testimonial-placeholder-card reveal">
+            <div>
+              <div class="testimonial-quote-icon">“</div>
+              <p class="testimonial-text">Client testimonial will appear here upon project completion. Space reserved for verified case feedback.</p>
+            </div>
+            <div class="testimonial-author-box">
+              <div class="author-avatar-ph">PH</div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.9rem; color: var(--text-primary);">Future Client Partner</div>
+                <div style="font-size: 0.78rem; color: var(--text-dim);">E-Commerce / Real Estate</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-placeholder-card reveal reveal-delay-1">
+            <div>
+              <div class="testimonial-quote-icon">“</div>
+              <p class="testimonial-text">Client testimonial will appear here upon project completion. Space reserved for verified case feedback.</p>
+            </div>
+            <div class="testimonial-author-box">
+              <div class="author-avatar-ph">PH</div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.9rem; color: var(--text-primary);">Future Client Partner</div>
+                <div style="font-size: 0.78rem; color: var(--text-dim);">B2B Services & Consulting</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-placeholder-card reveal reveal-delay-2">
+            <div>
+              <div class="testimonial-quote-icon">“</div>
+              <p class="testimonial-text">Client testimonial will appear here upon project completion. Space reserved for verified case feedback.</p>
+            </div>
+            <div class="testimonial-author-box">
+              <div class="author-avatar-ph">PH</div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.9rem; color: var(--text-primary);">Future Client Partner</div>
+                <div style="font-size: 0.78rem; color: var(--text-dim);">SaaS / Logistics Founder</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- =========================================================================
+         FAQ Accordion Section
+         ========================================================================= -->
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <div class="section-header text-center reveal">
+          <div class="eyebrow eyebrow-cyan">Frequently Asked Questions</div>
+          <h2>Clear answers to common questions</h2>
+          <p class="lead">Everything you need to know about how we work, pricing, timelines, and technical integration.</p>
+        </div>
+
+        <div class="accordion reveal">
+          
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What kind of businesses do you work with?</span>
+              <span class="accordion-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                We work with small to mid-sized businesses, agencies, e-commerce brands, real estate firms, and service providers that handle repetitive manual processes, customer inquiries, or sales lead flows and want to scale efficiently using custom software and AI automations.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How much does a custom project cost?</span>
+              <span class="accordion-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Project costs start from ₹15,000 for focused WhatsApp or workflow automations, ₹20,000+ for custom AI agents, ₹35,000+ for custom apps, and ₹10,000+ for landing pages. We provide transparent, itemized fixed-price quotes after an initial discovery scoping call.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How long does a project take?</span>
+              <span class="accordion-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Simple automations and landing pages typically take 1 to 2 weeks. Custom apps dashboards and AI agent deployments with extensive data integrations typically require 3 to 5 weeks from architecture planning to full staging tests.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Can you integrate with my existing software?</span>
+              <span class="accordion-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Yes. We work seamlessly with REST APIs, webhooks, databases (PostgreSQL, Supabase, MySQL, MongoDB), Google Workspace.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Can you automate WhatsApp Business?</span>
+              <span class="accordion-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Yes. We build on the official Meta WhatsApp Cloud API to set up interactive menus, automated lead qualification quizzes, instant calendar booking, transactional shipping/invoice alerts, and smart human handoffs.
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Can you build a custom CRM?</span>
+              <span class="accordion-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Yes. If off-the-shelf CRMs are too bloated, expensive, or rigid for your workflow, we build lightweight, dedicated CRMs designed around your exact pipeline stages, team permissions, custom fields, and reporting dashboards.
+              </div>
+            </div>
+          </div> -->
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Can you build AI agents for my business?</span>
+              <span class="accordion-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Yes. We engineer AI agents grounded in your private business documents (PDFs, knowledgebases, product catalogs) using retrieval-augmented generation (RAG) so that the responses are accurate, hallucination-free, and brand-aligned.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Do you provide maintenance after launch?</span>
+              <span class="accordion-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Every project includes 7 to 21 days of complimentary post-launch support and monitoring. We also offer ongoing monthly maintenance retainers for system updates, prompt refinement, and scaling.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Final CTA Section
+         ========================================================================= -->
+    <section class="section final-cta-section">
+      <div class="container">
+        <div class="final-cta-box reveal">
+          <div class="eyebrow eyebrow-cyan" style="margin: 0 auto 1.25rem;">Start A Conversation</div>
+          <h2>Have a process that should be automated?</h2>
+          <p>
+            Tell us what you're trying to build. We'll help you figure out the simplest, most resilient way to make it happen without unnecessary complexity.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+<a href="contact.html?tier=custom" class="btn btn-outline btn-full">
+  Send Project Brief
+</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+                            <img class="brand-image"
+     src="../images/charlogo.avif"
+     alt="ZELVYN — Intelligent Systems for Modern Business" width="105" 
+  height="105" 
+  loading="lazy"
+  decoding="async">
+            <span class="brand-name" data-config="brand.name">ZELVYN</span>
+          </a>
+          <p data-config="brand.description">
+            We build AI agents, WhatsApp automations, custom apps, websites and digital systems that help businesses save time, capture leads and operate more efficiently.
+          </p>
+          <div class="social-links">
+            <!-- <a href="#" class="social-btn" aria-label="LinkedIn" data-config-href="social.linkedin">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a> -->
+            <!-- <a href="#" class="social-btn" aria-label="Twitter" data-config-href="social.twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a> -->
+            <a href="#" class="social-btn" aria-label="GitHub" data-config-href="social.github">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </a>
+             <a href="#" class="social-btn" aria-label="Instagram" data-config-href="social.instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"></circle>
+              </svg>
+
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-nav">
+            <li><a href="services/whatsapp-automation.html" class="footer-link">WhatsApp Automation</a></li>
+            <li><a href="services/ai-agents.html" class="footer-link">AI Agents</a></li>
+            <!-- <li><a href="services/custom-crm.html" class="footer-link">Custom CRM</a></li> -->
+            <li><a href="services/web-development.html" class="footer-link">Web Development</a></li>
+            <li><a href="services/ai-advertising.html" class="footer-link">AI Advertising</a></li>
+            <li><a href="services/business-automation.html" class="footer-link">Business Automation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-nav">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="projects.html" class="footer-link">Selected Work</a></li>
+            <li><a href="process.html" class="footer-link">Engineering Process</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing Plans</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Inquiries</h4>
+          <ul class="footer-nav" style="font-size: 0.9rem;">
+            <li style="color: var(--text-secondary);">
+              <span style="color: var(--text-dim); display: block; font-size: 0.75rem; font-family: var(--font-mono);">Direct Link</span>
+              <a href="contact.html" data-config="contact.email" style="color: var(--accent-cyan);">Click Here</a>
+            </li>
+            <li style="color: var(--text-secondary); margin-top: 0.5rem;">
+              <span style="color: var(--text-dim); display: block; font-size: 0.75rem; font-family: var(--font-mono);">LOCATION</span>
+              <span data-config="contact.location">Global (Remote)</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="year">2026</span> <span data-config="brand.legalName">ZELVYN Systems</span>. All rights reserved.
+        </div>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions -->
+  <div class="floating-widget-group">
+    <a href="#" class="whatsapp-float" aria-label="Quick Action">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+      </svg>
+  <span>Start a Conversation</span>
+
+    </a>
+    <button class="back-to-top" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/brand-reveal.js"></script>
+  <script src="assets/js/3d-tilt.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/accordion.js"></script>
+</body>
+</html>

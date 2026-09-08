@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study: Invoice, Billing & Multi-App Sync Pipeline — ZELVYN AI</title>
+  <meta name="description" content="Detailed case study on building an event-driven automation workflow linking payment gateways, dynamic PDF generation, customer alerts, and accounting sync.">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="../index.html" class="brand-logo">
+                        <img class="brand-image"
+     src="../images/charlogo.avif"
+     alt="ZELVYN — Intelligent Systems for Modern Business">
+        <span class="brand-name" data-config="brand.name">ZELVYN AI</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <div class="nav-links">
+          <a href="../services.html" class="nav-link">Services</a>
+          <a href="../projects.html" class="nav-link active">Work</a>
+          <a href="../process.html" class="nav-link">Process</a>
+          <a href="../pricing.html" class="nav-link">Pricing</a>
+          <a href="../about.html" class="nav-link">About</a>
+          <a href="../contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a href="../contact.html" class="btn btn-primary btn-sm">
+            <span>Start a Conversation</span>
+          </a>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="../index.html" class="mobile-nav-link">Home</a>
+      <a href="../services.html" class="mobile-nav-link">Services</a>
+      <a href="../projects.html" class="mobile-nav-link active">Work</a>
+      <a href="../process.html" class="mobile-nav-link">Process</a>
+      <a href="../pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="../about.html" class="mobile-nav-link">About</a>
+      <a href="../contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+    <div style="margin-top: 2rem;">
+      <a href="../contact.html" class="btn btn-primary btn-full">Start a Conversation</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <article class="section" style="padding-bottom: 2rem;">
+      <div class="container container-narrow">
+        <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.25rem;" class="reveal">
+          <a href="../projects.html" class="service-link" style="font-size: 0.85rem;">← Back to All Projects</a>
+          <span class="badge badge-cyan">Automation</span>
+          <span class="badge badge-concept">Concept Project</span>
+        </div>
+
+        <h1 class="reveal reveal-delay-1">Automated Invoice, Billing & Multi-App Sync Pipeline</h1>
+        <p class="lead reveal reveal-delay-2" style="margin-top: 1rem;">
+          How we engineered a fault-tolerant webhook architecture that eliminates manual data entry by automatically generating branded PDF invoices, dispatching WhatsApp receipts, and syncing accounting records upon payment confirmation.
+        </p>
+
+        <div class="project-meta-grid reveal reveal-delay-3" style="grid-template-columns: repeat(4, 1fr); margin-top: 2.5rem; padding: 1.25rem;">
+          <div>
+            <div class="meta-label">Category</div>
+            <div class="meta-value">Business Automation</div>
+          </div>
+          <div>
+            <div class="meta-label">Industry</div>
+            <div class="meta-value">B2B SaaS / Services</div>
+          </div>
+          <div>
+            <div class="meta-label">Timeline</div>
+            <div class="meta-value">2 Weeks Build</div>
+          </div>
+          <div>
+            <div class="meta-label">Primary Tech</div>
+            <div class="meta-value">Node.js, Stripe Webhooks, Puppeteer</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Architecture Mockup -->
+    <section class="section" style="padding: 1rem 0 3rem;">
+      <div class="container container-narrow">
+        <div class="system-dashboard-mockup reveal" style="padding: 2rem;">
+          <div class="mockup-header">
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan);">EVENT-DRIVEN WEBHOOK PIPELINE</span>
+            <span style="font-size: 0.75rem; color: var(--text-dim);">AUTOMATIC RETRY HANDLERS</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
+            <div style="background: var(--bg-surface-elevated); padding: 0.85rem 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <span>Stripe / Razorpay Charge Succeeded Event</span>
+              <span class="badge badge-emerald">Inbound Webhook</span>
+            </div>
+            <div style="text-align: center; color: var(--accent-cyan);">↓</div>
+            <div style="background: var(--bg-surface-elevated); padding: 0.85rem 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <span>Dynamic PDF Invoice Render with Custom Tax & GST Fields</span>
+              <span class="badge badge-primary">Puppeteer Engine</span>
+            </div>
+            <div style="text-align: center; color: var(--accent-cyan);">↓</div>
+            <div style="background: var(--bg-surface-elevated); padding: 0.85rem 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <span>Dispatch via WhatsApp & Email + Archive to Google Drive / ERP</span>
+              <span class="badge badge-cyan">Multi-Channel Sync</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breakdown Content -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container container-narrow">
+        
+        <div class="reveal" style="margin-bottom: 3rem;">
+          <h2>The Challenge</h2>
+          <p>
+            An agency with over 50 recurring client accounts was manually drafting invoices in Word, converting them to PDF, emailing clients individually, and logging payments in an Excel spreadsheet. This manual process consumed 15+ hours weekly, introduced human calculation errors in GST invoicing, and created delays in client payment confirmations.
+          </p>
+        </div>
+
+        <div class="reveal" style="margin-bottom: 3rem;">
+          <h2>Our Architectural Approach</h2>
+          <p>
+            We engineered a serverless event-driven webhook pipeline. When payment gateways (Razorpay / Stripe) emit a successful transaction event, an automated Node.js microservice captures the payload, computes line-item taxes, dynamically generates an official PDF invoice via a headless HTML renderer, uploads the file to an encrypted S3 bucket, and delivers it instantly to the customer's WhatsApp and email.
+          </p>
+        </div>
+
+        <div class="reveal" style="margin-bottom: 3rem;">
+          <h2>Key Features Engineered</h2>
+          <ul class="feature-list" style="margin-top: 1.25rem;">
+            <li class="feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              <span><strong>Sub-Second Invoice Dispatch:</strong> Clients receive their official tax invoice via WhatsApp and email within 3 seconds of paying.</span>
+            </li>
+            <li class="feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              <span><strong>Automated Accounting Reconciliation:</strong> Payment statuses update in real time.</span>
+            </li>
+            <li class="feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              <span><strong>Resilient Dead-Letter Queue:</strong> Automatic retry mechanisms with immediate Slack alerts if any downstream API fails.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal" style="margin-bottom: 3rem;">
+          <h2>Technology Stack</h2>
+          <div class="tag-cloud" style="margin-top: 1rem;">
+            <span class="badge badge-emerald">Stripe & Razorpay APIs</span>
+            <span class="badge badge-cyan">Node.js / Express</span>
+            <span class="badge">Puppeteer Headless PDF</span>
+            <span class="badge">WhatsApp Cloud API</span>
+            <span class="badge">Google Drive API</span>
+          </div>
+        </div>
+
+        <div class="reveal" style="margin-bottom: 3rem;">
+          <h2>Engineered Outcome</h2>
+          <p>
+            The automated pipeline completely eliminated 15 hours of repetitive weekly administrative work, guaranteed 100% tax calculation accuracy, and ensured customers receive instantaneous billing confirmation.
+          </p>
+        </div>
+
+        <div class="final-cta-box reveal" style="padding: 2.5rem; text-align: center; margin-top: 4rem;">
+          <h3>Have manual business processes that should be automated?</h3>
+          <p style="margin: 1rem auto 1.5rem; font-size: 1rem;">Let's map out your tool integrations and build a reliable automated pipeline.</p>
+          <a href="../contact.html?service=business-automation" class="btn btn-primary btn-lg">
+            <span>Discuss Automation Pipeline</span>
+            <svg class="arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-logo">
+                    <img class="brand-image"
+     src="../images/charlogo.avif"
+     alt="ZELVYN — Intelligent Systems for Modern Business">
+            <span class="brand-name" data-config="brand.name">ZELVYN AI</span>
+          </a>
+          <p data-config="brand.description">Bespoke AI automation and digital systems engineering.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-nav">
+            <li><a href="../services/whatsapp-automation.html" class="footer-link">WhatsApp Automation</a></li>
+            <li><a href="../services/ai-agents.html" class="footer-link">AI Agents</a></li>
+            <!-- <li><a href="../services/custom-crm.html" class="footer-link">Custom CRM</a></li> -->
+            <li><a href="../services/web-development.html" class="footer-link">Web Development</a></li>
+            <li><a href="../services/ai-advertising.html" class="footer-link">AI Advertising</a></li>
+            <li><a href="../services/business-automation.html" class="footer-link">Business Automation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-nav">
+            <li><a href="../about.html" class="footer-link">About Us</a></li>
+            <li><a href="../projects.html" class="footer-link">Selected Work</a></li>
+            <li><a href="../process.html" class="footer-link">Process</a></li>
+            <li><a href="../pricing.html" class="footer-link">Pricing</a></li>
+            <li><a href="../contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-nav">
+            <li style="color: var(--text-secondary);"><span data-config="contact.email">hello@ZELVYNai.com</span></li>
+            <li style="color: var(--text-secondary);"><span data-config="contact.whatsappDisplay">Available on Request</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 <span data-config="brand.legalName">ZELVYN AI Solutions</span>. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
