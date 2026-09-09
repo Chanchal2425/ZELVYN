@@ -7,13 +7,13 @@
 const ZELVYN_CONFIG = {
   // Brand Identity
   brand: {
-    name: "ZELVYN",
+    name: "ZELVYN AI",
     mark: "Z",
     meaning: "Zero-friction Engineering, Logic, Vision, Your-growth & Networks",
     tagline: "Intelligent systems for modern business.",
     description: "We build AI agents, WhatsApp automations, custom apps, websites and digital systems that help businesses save time, capture leads and operate more efficiently.",
     year: 2026,
-    legalName: "ZELVYN Systems"
+    legalName: "ZELVYN AI Systems"
   },
 
   // Contact Information (Easily configurable placeholders)
@@ -23,7 +23,7 @@ const ZELVYN_CONFIG = {
     whatsappDisplay: "Available on Request",
     location: "Global (Remote & On-Site by Request)",
     businessHours: "Monday – Friday: 9:00 AM – 6:00 PM",
-    defaultWhatsAppMessage: "Hi ZELVYN, I would like to discuss an automation / development project."
+    defaultWhatsAppMessage: "Hi ZELVYN AI, I would like to discuss an automation / development project."
   },
 
   // Social Links (Easily replaceable placeholders)
